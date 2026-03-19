@@ -39,6 +39,10 @@ function tts(query, completion) {
       messages: [
         {
           role: "user",
+          content: "hello",
+        },
+        {
+          role: "assistant",
           content: text
         }
       ],

@@ -1,67 +1,67 @@
 {
-    "identifier": "com.acgso.bob-plugin-mimo-2-tts",
-    "version": "0.1.0",
-    "category": "tts",
-    "name": "MiMo-2 TTS服务",
-    "summary": "小米 MiMo-2 TTS 语音合成服务",
-    "icon": "logo.png",
-    "author": "ipfans",
-    "homepage": "https://github.com/ipfans/bob-plugin-mimo-2-tts",
-    "minBobVersion": "0.5.0",
-    "options": [
+  "identifier": "com.acgso.bob-plugin-mimo-2-tts",
+  "version": "0.1.1",
+  "category": "tts",
+  "name": "MiMo-2 TTS服务",
+  "summary": "小米 MiMo-2 TTS 语音合成服务",
+  "icon": "logo.png",
+  "author": "ipfans",
+  "homepage": "https://github.com/ipfans/bob-plugin-mimo-2-tts",
+  "minBobVersion": "0.5.0",
+  "options": [
+    {
+      "identifier": "desc",
+      "type": "menu",
+      "title": "描述",
+      "defaultValue": "Speech Service",
+      "menuValues": [
         {
-            "identifier": "desc",
-            "type": "menu",
-            "title": "描述",
-            "defaultValue": "Speech Service",
-            "menuValues": [
-                {
-                    "title": "MiMo-2 TTS服务",
-                    "value": "Speech Service"
-                }
-            ],
-            "desc": "MiMo-2 TTS服务"
-        },
-        {
-            "identifier": "apiKey",
-            "type": "text",
-            "title": "API KEY",
-            "defaultValue": "",
-            "desc": "请勿共享密钥。安全地存储这些密钥"
-        },
-        {
-            "identifier": "cacheDataNum",
-            "type": "menu",
-            "title": "缓存数量",
-            "defaultValue": "10",
-            "menuValues": [
-                {
-                    "title": "10",
-                    "value": "10"
-                },
-                {
-                    "title": "50",
-                    "value": "50"
-                },
-                {
-                    "title": "100",
-                    "value": "100"
-                }
-            ],
-            "desc": "缓存音频的数量，超出会删除历史缓存"
-        },
-        {
-            "identifier": "voice",
-            "type": "menu",
-            "title": "语音角色",
-            "defaultValue": "mimo_default",
-            "menuValues": [
-                {
-                    "title": "MiMo Default",
-                    "value": "mimo_default"
-                }
-            ],
-            "desc": "选择语音角色"
+          "title": "MiMo-2 TTS服务",
+          "value": "Speech Service"
         }
-    ]
+      ],
+      "desc": "MiMo-2 TTS服务"
+    },
+    {
+      "identifier": "apiKey",
+      "type": "text",
+      "title": "API KEY",
+      "defaultValue": "",
+      "desc": "请勿共享密钥。安全地存储这些密钥"
+    },
+    {
+      "identifier": "cacheDataNum",
+      "type": "menu",
+      "title": "缓存数量",
+      "defaultValue": "10",
+      "menuValues": [
+        {
+          "title": "10",
+          "value": "10"
+        },
+        {
+          "title": "50",
+          "value": "50"
+        },
+        {
+          "title": "100",
+          "value": "100"
+        }
+      ],
+      "desc": "缓存音频的数量，超出会删除历史缓存"
+    },
+    {
+      "identifier": "voice",
+      "type": "menu",
+      "title": "语音角色",
+      "defaultValue": "mimo_default",
+      "menuValues": [
+        {
+          "title": "MiMo Default",
+          "value": "mimo_default"
+        }
+      ],
+      "desc": "选择语音角色"
+    }
+  ]
 }
