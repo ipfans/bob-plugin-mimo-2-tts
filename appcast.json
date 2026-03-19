@@ -1,4 +1,12 @@
 {
   "identifier": "com.acgso.bob-plugin-mimo-2-tts",
-  "versions": []
+  "versions": [
+    {
+      "version": "0.1.0",
+      "desc": "ci: add contents write permission to workflow",
+      "sha256": "7bfefe2d7e2ae33cb77eea98048b71facbf406fe992330e54de746d26341bae0",
+      "url": "https://github.com/ipfans/bob-plugin-mimo-2-tts/releases/download/v0.1.0/bob-plugin-mimo-2-tts_v0.1.0.bobplugin",
+      "minBobVersion": "0.5.0"
+    }
+  ]
 }
