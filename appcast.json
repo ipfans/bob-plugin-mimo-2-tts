@@ -2,6 +2,13 @@
   "identifier": "com.acgso.bob-plugin-mimo-2-tts",
   "versions": [
     {
+      "version": "0.1.1",
+      "desc": "Merge branch 'master' of https://github.com/ipfans/bob-plugin-mimo-2-tts",
+      "sha256": "4df4185b5f054b830efdc3b052a70d26edb75e595bc022a44652b791ccdea24d",
+      "url": "https://github.com/ipfans/bob-plugin-mimo-2-tts/releases/download/v0.1.1/bob-plugin-mimo-2-tts_v0.1.1.bobplugin",
+      "minBobVersion": "0.5.0"
+    },
+    {
       "version": "0.1.0",
       "desc": "update appcast.json",
       "sha256": "c8040f79713565cca3b3d9012a5c31edf62befce8a1e54cd459e277bdf1e0708",
