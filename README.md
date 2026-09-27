@@ -1,6 +1,6 @@
 # bob-plugin-mimo-2-tts
 
-这是一个 Bob 插件，使用小米 MiMo-2-TTS 模型将文本转换为语音。
+这是一个 Bob 插件，使用小米 MiMo-V2.5-TTS 模型将文本转换为语音。
 
 ## 前置条件
 

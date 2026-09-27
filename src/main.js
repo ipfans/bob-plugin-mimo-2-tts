@@ -10,7 +10,8 @@ function tts(query, completion) {
   const secretKey = $option['apiKey'];
   const cacheDataNum = $option['cacheDataNum'];
   const voice = $option['voice'] || 'mimo_default';
-  const audioKey = CryptoJS.MD5(voice + text).toString();
+  const style = ($option['style'] || '').trim();
+  const audioKey = CryptoJS.MD5(voice + '\0' + style + '\0' + text).toString();
   const audioPath = '$sandbox/' + audioKey;
 
   // 检查缓存
@@ -26,7 +27,19 @@ function tts(query, completion) {
     return;
   }
 
-  // 调用 MiMo-2 TTS API
+  const messages = [];
+  if (style) {
+    messages.push({
+      role: "user",
+      content: style
+    });
+  }
+  messages.push({
+    role: "assistant",
+    content: text
+  });
+
+  // 调用 MiMo-V2.5 TTS API
   $http.request({
     method: "POST",
     url: "https://api.xiaomimimo.com/v1/chat/completions",
@@ -35,17 +48,8 @@ function tts(query, completion) {
       'Authorization': 'Bearer ' + secretKey
     },
     body: {
-      model: "mimo-v2-tts",
-      messages: [
-        {
-          role: "user",
-          content: "hello",
-        },
-        {
-          role: "assistant",
-          content: text
-        }
-      ],
+      model: "mimo-v2.5-tts",
+      messages: messages,
       audio: {
         format: "wav",
         voice: voice

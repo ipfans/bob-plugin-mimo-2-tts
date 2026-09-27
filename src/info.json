@@ -1,9 +1,9 @@
 {
   "identifier": "com.acgso.bob-plugin-mimo-2-tts",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "category": "tts",
   "name": "MiMo-2 TTS服务",
-  "summary": "小米 MiMo-2 TTS 语音合成服务",
+  "summary": "小米 MiMo-V2.5 TTS 语音合成服务",
   "icon": "logo.png",
   "author": "ipfans",
   "homepage": "https://github.com/ipfans/bob-plugin-mimo-2-tts",
@@ -16,11 +16,11 @@
       "defaultValue": "Speech Service",
       "menuValues": [
         {
-          "title": "MiMo-2 TTS服务",
+          "title": "MiMo-V2.5 TTS服务",
           "value": "Speech Service"
         }
       ],
-      "desc": "MiMo-2 TTS服务"
+      "desc": "MiMo-V2.5 TTS服务"
     },
     {
       "identifier": "apiKey",
@@ -57,11 +57,50 @@
       "defaultValue": "mimo_default",
       "menuValues": [
         {
-          "title": "MiMo Default",
+          "title": "MiMo 默认",
           "value": "mimo_default"
+        },
+        {
+          "title": "冰糖（中文女声）",
+          "value": "冰糖"
+        },
+        {
+          "title": "茉莉（中文女声）",
+          "value": "茉莉"
+        },
+        {
+          "title": "苏打（中文男声）",
+          "value": "苏打"
+        },
+        {
+          "title": "白桦（中文男声）",
+          "value": "白桦"
+        },
+        {
+          "title": "Mia（英文女声）",
+          "value": "Mia"
+        },
+        {
+          "title": "Chloe（英文女声）",
+          "value": "Chloe"
+        },
+        {
+          "title": "Milo（英文男声）",
+          "value": "Milo"
+        },
+        {
+          "title": "Dean（英文男声）",
+          "value": "Dean"
         }
       ],
-      "desc": "选择语音角色"
+      "desc": "选择内置语音角色"
+    },
+    {
+      "identifier": "style",
+      "type": "text",
+      "title": "预期风格",
+      "defaultValue": "",
+      "desc": "可选。用自然语言描述朗读风格，留空则不添加"
     }
   ]
 }
