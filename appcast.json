@@ -2,6 +2,13 @@
   "identifier": "com.acgso.bob-plugin-mimo-2-tts",
   "versions": [
     {
+      "version": "0.1.2",
+      "desc": "feat: switch TTS to mimo-v2.5 with more voices and optional style",
+      "sha256": "c8ec781a744fc9680969cdd43550fce6e2f57d73187f3bf25d204e8f670dcfb9",
+      "url": "https://github.com/ipfans/bob-plugin-mimo-2-tts/releases/download/v0.1.2/bob-plugin-mimo-2-tts_v0.1.2.bobplugin",
+      "minBobVersion": "0.5.0"
+    },
+    {
       "version": "0.1.1",
       "desc": "Merge branch 'master' of https://github.com/ipfans/bob-plugin-mimo-2-tts",
       "sha256": "4df4185b5f054b830efdc3b052a70d26edb75e595bc022a44652b791ccdea24d",
